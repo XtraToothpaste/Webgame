@@ -3,6 +3,11 @@
     var object = document.body;
 
     function textInput() {
+        var inputText = document.getElementById("uname").value;
+        var textNode = document.createTextNode(inputText);
+        var para = document.createElement("p");
+        document.getElementById("output").appendChild(textNode);
+        document.getElementById("output").appendChild(para);
         alert("alert message");
     }
 </script>
